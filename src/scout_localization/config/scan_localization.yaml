@@ -1,0 +1,15 @@
+localization_cloud_to_scan:
+  ros__parameters:
+    use_sim_time: false
+    target_frame: livox_level
+    transform_tolerance: 0.05
+    # Lidar origin is 0.405 m above ground. Match offline [0.10, 0.75] m.
+    min_height: -0.305
+    max_height: 0.345
+    angle_min: -3.141592653589793
+    angle_max: 3.141592653589793
+    angle_increment: 0.008726646259971648
+    scan_time: 0.10
+    range_min: 0.35
+    range_max: 12.0
+    use_inf: true

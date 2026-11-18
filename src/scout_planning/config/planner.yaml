@@ -1,0 +1,12 @@
+scout_astar:
+  ros__parameters:
+    use_sim_time: false
+    # Legacy launch argument accepted for compatibility; not used for collisions.
+    clearance_radius: 0.425
+    robot_length: 0.61
+    robot_width: 0.56
+    safety_margin: 0.04
+    replan_period: 1.0
+    pose_timeout: 0.5
+    max_expansions: 15000
+    search_time_budget: 0.35

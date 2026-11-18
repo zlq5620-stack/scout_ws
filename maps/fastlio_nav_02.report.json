@@ -1,0 +1,37 @@
+{
+  "source_points": 1127967,
+  "finite_points": 1127967,
+  "range_retained": 1127954,
+  "voxel_points": 249111,
+  "neighbor_filter_retained": 248455,
+  "ground_points": 17586,
+  "obstacle_points": 20809,
+  "ground_fit": {
+    "normal": [
+      -0.04656830324526015,
+      0.023580958918120398,
+      0.9986367365110094
+    ],
+    "d": 0.020427980854640544,
+    "tilt_deg": 2.9921053626367597,
+    "candidate_points": 15000,
+    "inlier_fraction": 0.5778666666666666
+  },
+  "resolution": 0.05,
+  "height_band": [
+    0.1,
+    0.75
+  ],
+  "size_cells": [
+    149,
+    159
+  ],
+  "size_m": [
+    7.45,
+    7.95
+  ],
+  "occupied_cells": 1250,
+  "free_cells": 4255,
+  "unknown_cells": 18186,
+  "limitations": "Floor evidence is not ray-traced free space or proof of clearance; height band must match actual vehicle envelope. Not yet navigation validated."
+}

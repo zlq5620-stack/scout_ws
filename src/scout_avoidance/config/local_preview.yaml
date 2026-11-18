@@ -1,0 +1,24 @@
+/**:
+  ros__parameters:
+    use_sim_time: false
+    robot_length: 0.61
+    robot_width: 0.56
+    robot_height: 0.60
+    safety_margin: 0.04
+    max_speed: 0.10
+    max_turn_rate: 0.4
+    linear_accel: 0.2
+    angular_accel: 0.8
+    brake_decel: 0.15
+    control_dt: 0.1
+    horizon: 2.0
+    sim_dt: 0.05
+    lookahead: 0.5
+    goal_tolerance: 0.15
+    yaw_tolerance: 0.12
+    scan_timeout: 0.45
+    odom_timeout: 0.30
+    path_timeout: 3.0
+    tf_timeout: 0.5
+    min_scan_points: 12
+    min_front_points: 3

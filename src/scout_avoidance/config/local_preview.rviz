@@ -1,0 +1,136 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Views
+  Name: Views
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+    Frame Rate: 20
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Grid
+    Enabled: true
+    Cell Size: 1.0
+    Plane: XY
+    Reference Frame: map
+  - Class: rviz_default_plugins/Map
+    Name: Saved map
+    Enabled: true
+    Topic:
+      Depth: 5
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /map
+    Alpha: 0.85
+    Color Scheme: map
+    Draw Behind: true
+  - Class: rviz_default_plugins/Map
+    Name: Raw map compatibility layer (optional)
+    Enabled: false
+    Topic:
+      Depth: 1
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /planning/inflated_map
+    Alpha: 0.45
+    Color Scheme: map
+    Draw Behind: false
+  - Class: rviz_default_plugins/LaserScan
+    Name: Live scan
+    Enabled: true
+    Topic:
+      Depth: 5
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Best Effort
+      Value: /scan
+    Size (m): 0.035
+    Style: Flat Squares
+    Color Transformer: FlatColor
+    Color: 255; 40; 40
+    Position Transformer: XYZ
+    Decay Time: 0.0
+  - Class: rviz_default_plugins/PoseWithCovariance
+    Name: AMCL pose
+    Enabled: true
+    Topic:
+      Depth: 5
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Best Effort
+      Value: /amcl_pose
+    Shape: Arrow
+    Color: 0; 255; 0
+  - Class: rviz_default_plugins/TF
+    Name: TF
+    Enabled: false
+    Show Arrows: true
+    Show Axes: true
+    Show Names: true
+  - Class: rviz_default_plugins/Path
+    Name: Global path (preview only)
+    Enabled: true
+    Topic:
+      Depth: 1
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /global_path
+    Line Style: Lines
+    Line Width: 0.04
+    Color: 40; 120; 255
+    Alpha: 1.0
+    Pose Style: None
+    Buffer Length: 1
+  - Class: rviz_default_plugins/Path
+    Name: Local trajectory + braking tail (preview)
+    Enabled: true
+    Topic:
+      Depth: 5
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /local_planning/local_path
+    Line Style: Lines
+    Line Width: 0.045
+    Color: 255; 140; 0
+    Alpha: 1.0
+    Pose Style: None
+    Buffer Length: 1
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Local obstacles and collision rectangle
+    Enabled: true
+    Topic:
+      Depth: 5
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /local_planning/markers
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Select
+  - Class: rviz_default_plugins/SetInitialPose
+    Topic: /initialpose
+    Covariance x: 0.25
+    Covariance y: 0.25
+    Covariance yaw: 0.06853891945200942
+  - Class: rviz_default_plugins/SetGoal
+    Topic: /goal_pose
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Target Frame: map
+      Scale: 60.0
+      X: -1.0
+      Y: 0.0
+      Angle: 0.0
+Window Geometry:
+  Width: 1250
+  Height: 850
